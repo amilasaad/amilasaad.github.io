@@ -1,0 +1,8 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Poppins:ital,wght@0,200;0,300;0,600;1,300&family=Roboto:wght@100;300;500&display=swap');
+@import '~bootstrap-icons/font/bootstrap-icons.css';
+
+.service-block {
+    height: 350px;
+    width: 350px;
+}

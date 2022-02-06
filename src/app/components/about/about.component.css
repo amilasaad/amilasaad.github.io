@@ -1,0 +1,57 @@
+.padding-container {
+    padding: 20px;
+}
+.block-height {
+    height: 100px;
+}
+.no-padding {
+    margin: 0;
+    padding: 0;
+}
+.image {
+    margin-top: 50px;
+    margin-bottom: auto;
+}
+img {
+    height: 80vh;
+    width: 80%;
+    object-position: 0px -5px;
+    object-fit: cover;
+}
+.sub-text {
+    color: rgb(94, 94, 94);
+}
+.content {
+    box-shadow: 0px 10px 20px rgb(80, 80, 80);
+}
+.right {
+    height: 100vh;
+    background: linear-gradient(to left , red 30%, white 0%);
+}
+.left {
+    padding: 100px;
+}
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.button-call {
+    width: 45%;
+    height: 40px;
+    border: 1px solid;
+    background: linear-gradient(to left , red 18%, white 0%);
+}
+.content-call {
+    padding: 6px;
+    margin: auto;
+    width: 100%;
+}
+.btn-call {
+    right: 0px;
+}
+.icon {
+    float: right;
+    margin-right: 5px;
+    color: white;
+    cursor: pointer;
+}

@@ -1,0 +1,10 @@
+.slides-div {
+    height: 100vh;
+    margin-top: 37px;
+}
+.slides-div img {
+    object-fit: cover;
+}
+.txt-caption {
+    top: 10px;
+}
