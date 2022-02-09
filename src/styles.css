@@ -6,3 +6,70 @@
     height: 350px;
     width: 350px;
 }
+
+.web-name {
+    top: -100px;
+}
+
+@media all and (max-width : 995px) {
+
+    .remove_995px {
+        display: none;
+    }
+
+    .padding_995px {
+        margin: 40px;
+        padding: 40px;
+    }
+
+    .slide-size {
+        height: 400px;
+    }
+
+}
+
+@media all and (max-width : 800px) {
+
+    .remove_995px {
+        display: none;
+    }
+
+    .padding_995px {
+        margin: 40px;
+        padding: 40px;
+    }
+
+    .slide-size {
+        height: 300px;
+    }
+}
+
+@media all and (max-width : 600px) {
+
+    .left-intro {
+        margin: 15px;
+        padding: 15px;
+    }
+
+    body h3, .sub-text {
+        font-size: 80%;
+    }
+
+    .service-block {
+        height: 56px;
+    }
+
+    .code-service-r, .photography-service-r {
+        height: 0px;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .slides-div {
+        max-height: 300px;
+    }
+
+    .content-call, .button-call {
+        display: none;
+    }
+}
