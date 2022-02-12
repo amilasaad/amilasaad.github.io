@@ -11,13 +11,9 @@ declare const sendEmail: any;
 export class AppComponent {
   title = 'Amilbangsa';
   closeResult = '';
-  private transporter!: nodemailer.Transporter;
-  subject = document.querySelector('.subject-text');
-  email = document.querySelector('.email-text');
-  msgg = document.querySelector('.message-text');
 
   sendMail() {
-    sendEmail();
+    sendEmail;
   }
   // onSubmit(contactForm: NgForm) {
   //   if (contactForm.valid) {

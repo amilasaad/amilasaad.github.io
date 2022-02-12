@@ -1,9 +1,10 @@
-alert('1234');
+alert('1234567');
 console.log("HELLO");
 
 const form = document.querySelector('.modal-body');
+
 function sendEmail() {
-    alert('Nice work');
+    alert('Nice work UP');
        subject = document.querySelector('.subject-text'),
         email = document.querySelector('.email-text'),
         msgg = document.querySelector('.message-text')
@@ -17,8 +18,9 @@ function sendEmail() {
         Subject: this.subject.value,
         Body: this.msgg.value
     }).then(
-        message => alert('Success')
+        alert('Success')
     );
+    alert('Nice work BOTTOM');
 }
 
 form.addEventListener('submit', sendEmail);
