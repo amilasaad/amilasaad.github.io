@@ -37,6 +37,7 @@
     text-decoration: none;
     border: 1px solid rgb(43, 43, 43);
     margin-left: 10px;
+    cursor: git ;
 }
 .dload-btn:hover {
     background-color: rgb(206, 0, 0);

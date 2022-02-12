@@ -1,6 +1,7 @@
-<nav class="navbar navbar-expand-lg navbar-light nav-bar-amil remove_995px" style="width: 99vw;" >
+<nav class="navbar navbar-expand-lg navbar-light nav-bar-amil remove_995px" style="width: 99vw;">
   <a class="navbar-brand web-name remove_995px" href="#">A<span>a</span></a>
-  <button class="navbar-toggler remove_995px" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler remove_995px" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -9,23 +10,52 @@
       <!--<a class="nav-item nav-link" href="#portfolio">Portfolio</a>-->
       <a class="nav-item nav-link" href="#service">Services</a>
       <a class="nav-item nav-link" href="#about">About</a>
-      <a class="nav-item nav-link" href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJqTfVPvDgTzMbkHRnCZsHxvLQBrJrRXfThxfmZDjrfGfxJlBJchGrkrMGQZxgwHbpQLxvq" target="_blank">Contact me</a>
+      <a class="nav-item nav-link contact-btn" (click)="open(content)" target="_blank">Contact me</a>
     </div>
     <div class="contact-icon">
       <div class="row">
         <div class="col-sm no-padding">
-            <a href="https://www.linkedin.com/in/amilbangsa-asaad-126a13197/" target="_blank"><img src="assets/svg/linkedin-brands.svg" class="icon"></a>
+          <a href="https://www.linkedin.com/in/amilbangsa-asaad-126a13197/" target="_blank"><img
+              src="assets/svg/linkedin-brands.svg" class="icon"></a>
         </div>
         <div class="col-sm no-padding">
-          <a href="https://www.facebook.com/profile.php?id=100031939518493" target="_blank"><img src="assets/svg/facebook-square-brands.svg" class="icon"></a>
+          <a href="https://www.facebook.com/profile.php?id=100031939518493" target="_blank"><img
+              src="assets/svg/facebook-square-brands.svg" class="icon"></a>
         </div>
         <div class="col-sm no-padding">
-          <a href="https://github.com/amilasaad" target="_blank"><img src="assets/svg/github-square-brands.svg" class="icon"></a>
+          <a href="https://github.com/amilasaad" target="_blank"><img src="assets/svg/github-square-brands.svg"
+              class="icon"></a>
         </div>
       </div>
     </div>
   </div>
 </nav>
+
+<ng-template #content let-modal>
+  <form class="was-validated modal-body" action="https://formspree.io/f/mknyrnjg"
+  method="POST" target="_blank">
+    <div class="col-md-12">
+      <label for="validationServer01" class="form-label">Email</label>
+      <input type="text" name="email" class="form-control is-valid email-text" id="validationServer01" placeholder="Enter your email ..." required>
+    </div>
+    <br>
+    <div class="col-md-12">
+      <label for="validationServer01" class="form-label">Subject</label>
+      <input type="text" name="subject" class="form-control is-valid subject-text" id="validationServer01" required>
+    </div>
+    <br>
+    <div class="mb-3">
+      <label for="validationTextarea" class="form-label">Message</label>
+      <textarea name="message" class="form-control is-valid message-text" id="validationTextarea" placeholder="Enter your message ..."
+      style="height: 150px;" required></textarea>
+    </div>
+
+    <div class="mb-3">
+      <button class="btn btn-danger" click="sendEmail()" type="submit" style="width: 100%;">Send</button>
+    </div>
+  </form>
+</ng-template>
+
 <app-info-intro id="home"></app-info-intro>
 <app-slides id="portfolio"></app-slides>
 <app-service id="service"></app-service>
