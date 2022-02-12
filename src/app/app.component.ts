@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
 import * as nodemailer from 'nodemailer';
+declare const sendEmail: any;
 
 @Component({
   selector: 'app-root',
@@ -15,6 +16,9 @@ export class AppComponent {
   email = document.querySelector('.email-text');
   msgg = document.querySelector('.message-text');
 
+  sendMail() {
+    sendEmail();
+  }
   // onSubmit(contactForm: NgForm) {
   //   if (contactForm.valid) {
   //     const email = contactForm.value;

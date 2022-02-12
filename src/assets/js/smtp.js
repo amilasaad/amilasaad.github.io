@@ -1,10 +1,11 @@
 alert('123456');
 console.log("HELLO");
 function sendMail() {
-    alert('Nice work');
+    alert('Nice');
 }
 const form = document.querySelector('.modal-body');
 function sendEmail() {
+    alert('Nice work');
        subject = document.querySelector('.subject-text'),
         email = document.querySelector('.email-text'),
         msgg = document.querySelector('.message-text')
