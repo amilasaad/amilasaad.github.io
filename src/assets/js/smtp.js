@@ -1,4 +1,4 @@
-alert('1');
+alert('123456');
 console.log("HELLO");
 function sendMail() {
     alert('Nice work');
@@ -22,4 +22,4 @@ function sendEmail() {
     );
 }
 
-// form.addEventListener('submit', sendEmail);
+form.addEventListener('submit', sendEmail);
