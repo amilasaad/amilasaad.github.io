@@ -13,7 +13,7 @@ export class AppComponent {
   closeResult = '';
 
   sendMail() {
-    sendEmail;
+    sendEmail();
   }
   // onSubmit(contactForm: NgForm) {
   //   if (contactForm.valid) {
