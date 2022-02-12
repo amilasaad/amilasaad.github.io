@@ -1,8 +1,6 @@
-alert('123456');
+alert('1234');
 console.log("HELLO");
-function sendMail() {
-    alert('Nice');
-}
+
 const form = document.querySelector('.modal-body');
 function sendEmail() {
     alert('Nice work');
