@@ -1,4 +1,4 @@
-alert('123456');
+alert('12');
 console.log("HELLO");
 
 const form = document.querySelector('.modal-body');
