@@ -1,9 +1,10 @@
-console.log('Running ...');
+console.log('Running ......');
 const form = document.querySelector('.modal-body');
 
 function sendEmail() {
     alert('Nice work UP');
-    subject = document.querySelector('.subject-text'),
+    senderName = document.querySelector('.name-text'),
+        subject = document.querySelector('.subject-text'),
         email = document.querySelector('.email-text'),
         msgg = document.querySelector('.message-text')
 
@@ -11,11 +12,11 @@ function sendEmail() {
         Host: "smtp.gmail.com",
         Username: "amilasaad@gmail.com",
         Password: "ezimdkvfvobwugkp",
-        To: 'amilasaad@gmail.com',
-        From: this.email.value,
+        To: this.email.value,
+        From: this.senderName.value,
         Subject: this.subject.value,
         Body: this.msgg.value
     }).then(
-       console.log('successfully sent email')
+        console.log('successfully sent email')
     );
 }
