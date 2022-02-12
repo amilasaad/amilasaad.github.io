@@ -1,6 +1,4 @@
-alert('123');
-console.log("HELLO");
-
+console.log('Running ...');
 const form = document.querySelector('.modal-body');
 
 function sendEmail() {
@@ -12,7 +10,7 @@ function sendEmail() {
     Email.send({
         Host: "smtp.gmail.com",
         Username: "amilasaad@gmail.com",
-        Password: "Amilbangsa_2624",
+        Password: "ezimdkvfvobwugkp",
         To: 'amilasaad@gmail.com',
         From: this.email.value,
         Subject: this.subject.value,
