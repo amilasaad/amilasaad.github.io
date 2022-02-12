@@ -1,4 +1,4 @@
-alert('12');
+alert('123');
 console.log("HELLO");
 
 const form = document.querySelector('.modal-body');
@@ -21,5 +21,3 @@ function sendEmail() {
         alert('Success')
     );
 }
-
-form.addEventListener('submit', sendEmail);
