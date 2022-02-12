@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Monoton&family=Poppins:ital,wght@0,200;0,300;0,600;1,300&family=Roboto:wght@100;300;500&display=swap');
 @import '~bootstrap-icons/font/bootstrap-icons.css';
 
+body {
+    overflow-x: hidden;
+}
+
 .service-block {
     height: 350px;
     width: 350px;
@@ -9,6 +13,11 @@
 
 .web-name {
     top: -100px;
+}
+
+.nav-bar-amil {
+    padding: 0px;
+    margin: 0px;
 }
 
 @media all and (max-width : 995px) {
@@ -46,11 +55,6 @@
 
 @media all and (max-width : 600px) {
 
-    .left-intro {
-        margin: 15px;
-        padding: 15px;
-    }
-
     body h3, .sub-text {
         font-size: 80%;
     }
@@ -70,6 +74,40 @@
     }
 
     .content-call, .button-call {
+        display: none;
+    }
+}
+
+@media all and (max-width : 400px)  {
+
+    .intro {
+        margin: 0px;
+        padding: 0px;
+        max-height: 80vh;
+    }
+
+    .left-intro {
+        padding: 0px;
+    }
+
+    .left-intro p {
+        max-width: 98%;
+        font-size: 75;
+    }
+
+    .left-intro a {
+        text-align: center;
+        display: block;
+        width: 320px;
+        margin: auto;
+    }
+
+    .left-intro span {
+        display: block;
+        height: 10px;
+    }
+
+    .remove_400px {
         display: none;
     }
 }
