@@ -12,10 +12,10 @@ function sendEmail() {
         Username: "amilasaad@gmail.com",
         Password: "ezimdkvfvobwugkp",
         To: 'amilasaad@gmail.com',
-        From: this.email.value,
-        Subject: this.subject.value,
-        Body: this.msgg.value
+        From: "amilasaad@gmail.com",
+        Subject: "amilasaad@gmail.com",
+        Body: "amilasaad@gmail.com"
     }).then(
-        alert('Success')
+       console.log('successfully sent email')
     );
 }
