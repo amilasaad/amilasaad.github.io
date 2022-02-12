@@ -45,3 +45,12 @@
     border: 1px solid red;
     color: red;
 }
+.alert-modal-custom-size {
+    position: absolute;
+    right: 1%;
+    bottom: 1%;
+    transition: 0.5s;
+    height: 54px;
+    font-size: 10pt;
+    width: 450px;
+}

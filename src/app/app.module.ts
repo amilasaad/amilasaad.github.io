@@ -9,6 +9,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { ServiceComponent } from './components/service/service.component';
 import { AboutComponent } from './components/about/about.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ContactFormModalComponent } from './components/contact-form-modal/contact-form-modal.component';
 
 @NgModule({
   declarations: [
@@ -16,12 +18,14 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
     SlidesComponent,
     InfoIntroComponent,
     ServiceComponent,
-    AboutComponent
+    AboutComponent,
+    ContactFormModalComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
