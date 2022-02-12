@@ -10,11 +10,11 @@ function sendEmail() {
         Host: "smtp.gmail.com",
         Username: "amilasaad@gmail.com",
         Password: "ezimdkvfvobwugkp",
-        To: "amilasaad@gmail.com",
+        To: 'amilasaad@gmail.com',
         From: this.email.value,
         Subject: this.subject.value,
         Body: this.msgg.value
     }).then(
-        console.log('successfully sent email')
+       console.log('successfully sent email')
     );
 }
