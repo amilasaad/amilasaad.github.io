@@ -46,11 +46,12 @@
     color: red;
 }
 .alert-modal-custom-size {
-    position: absolute;
+    position: fixed;
     right: 1%;
     bottom: 1%;
     transition: 0.5s;
     height: 54px;
     font-size: 10pt;
     width: 450px;
+    z-index: 1;
 }
