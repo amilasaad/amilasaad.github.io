@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
+declare const sendEmail: any;
 
 @Component({
   selector: 'app-about',
@@ -17,6 +18,10 @@ export class AboutComponent implements OnInit {
   constructor(private modalService: NgbModal) {
   }
 
+  sendMail() {
+    sendEmail();
+  }
+  
   open(content: any) {
     this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title'}).result.then((result) => {
       this.closeResult = `Closed with: ${result}`;

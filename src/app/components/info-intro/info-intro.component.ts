@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
+declare const sendEmail: any;
 
 @Component({
   selector: 'app-info-intro',
@@ -13,6 +14,10 @@ export class InfoIntroComponent implements OnInit {
   }
 
   constructor(private modalService: NgbModal) {
+  }
+
+  sendMail() {
+    sendEmail();
   }
 
   open(content: any) {
