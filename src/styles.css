@@ -113,7 +113,11 @@ body {
         text-align: center;
         display: block;
         width: 320px;
-        margin: auto;
+    }
+
+    .left-intro .dload-btn {
+        margin-top: 40px;
+        margin-left: 10px;
     }
 
     .left-intro span {
