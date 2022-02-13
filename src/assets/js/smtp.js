@@ -1,4 +1,4 @@
-console.log('Running ......');
+console.log('Running ...');
 
 function sendEmail() {
     subject = document.querySelector('.subject-text'),
