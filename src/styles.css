@@ -118,12 +118,12 @@ body {
 
 }
 
-@media all and (max-width : 380px)  {
+@media all and (max-width : 391px)  {
 
     .intro {
         margin: 0px;
         padding: 0px;
-        max-height: 80vh;
+        max-height: 85vh;
     }
 
     .left-intro {
