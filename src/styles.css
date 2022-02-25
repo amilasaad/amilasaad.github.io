@@ -20,6 +20,12 @@ body {
     margin: 0px;
 }
 
+.modal-title{
+    font-size: 20pt;
+    text-align: center;
+    font-weight: bold;
+}
+
 @media all and (max-width : 995px) {
 
     .remove_995px {
