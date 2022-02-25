@@ -104,7 +104,21 @@ body {
     }
 }
 
-@media all and (max-width : 410px)  {
+@media all and (max-width : 480px)  {
+
+    .intro {
+        margin: 0px;
+        padding: 0px;
+        max-height: 70vh;
+    }
+
+    .remove_400px {
+        display: none;
+    }
+
+}
+
+@media all and (max-width : 380px)  {
 
     .intro {
         margin: 0px;
@@ -137,7 +151,7 @@ body {
         height: 10px;
     }
 
-    .remove_400px {
+    .remove_400px-br {
         display: none;
     }
 

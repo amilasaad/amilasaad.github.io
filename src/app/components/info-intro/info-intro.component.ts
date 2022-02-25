@@ -7,17 +7,14 @@ declare const sendEmail: any;
   templateUrl: './info-intro.component.html',
   styleUrls: ['./info-intro.component.css']
 })
-export class InfoIntroComponent implements OnInit {
+export class InfoIntroComponent {
   closeResult='';
-
-  ngOnInit(): void {
-  }
-
-  constructor(private modalService: NgbModal) {
-  }
 
   sendMail() {
     sendEmail();
+  }
+  
+  constructor(private modalService: NgbModal) {
   }
 
   open(content: any) {
