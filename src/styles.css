@@ -111,6 +111,11 @@ body {
 }
 
 @media all and (max-width : 480px)  {
+    .intro {
+        margin-top: 0px;
+        padding-top: 10px;
+    }
+
     .remove_400px {
         display: none;
     }
@@ -119,7 +124,7 @@ body {
 @media all and (max-width : 391px)  {
 
     .intro {
-        margin: 0px;
+        margin-top: 0px;
         padding: 0px;
         max-height: 70vh;
     }
