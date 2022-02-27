@@ -163,7 +163,7 @@ body {
 @media all and (max-height: 624px) {
 
     .mobile-title {
-        top: 10px;
+        display: none;
     }
     .intro {
         margin-top: 0px;
