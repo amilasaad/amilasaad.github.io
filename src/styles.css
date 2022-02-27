@@ -28,6 +28,12 @@ body {
 
 @media all and (max-width : 995px) {
 
+    .intro {
+        margin: 0px;
+        padding: 0px;
+        max-height: 65vh;
+    }
+
     .remove_995px {
         display: none;
     }
@@ -105,13 +111,6 @@ body {
 }
 
 @media all and (max-width : 480px)  {
-
-    .intro {
-        margin: 0px;
-        padding: 15px;
-        max-height: 70vh;
-    }
-
     .remove_400px {
         display: none;
     }
@@ -122,7 +121,7 @@ body {
     .intro {
         margin: 0px;
         padding: 0px;
-        max-height: 85vh;
+        max-height: 70vh;
     }
 
     .left-intro {
