@@ -159,6 +159,17 @@ body {
     }
 
 }
+
+@media all and (max-height: 624px) {
+
+    .intro {
+        margin-top: 0px;
+        padding: 0px;
+        max-height: 90vh;
+    }
+
+}
+
 @media (min-width: 480px) and (max-width: 2000px) {
     
     .mobile-footer {

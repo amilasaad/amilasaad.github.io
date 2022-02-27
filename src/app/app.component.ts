@@ -15,6 +15,10 @@ export class AppComponent {
   sendMail() {
     sendEmail();
   }
+
+  toKabs() {
+    alert('Matcho dancer kaw jo  . . .')
+  }
   // onSubmit(contactForm: NgForm) {
   //   if (contactForm.valid) {
   //     const email = contactForm.value;
