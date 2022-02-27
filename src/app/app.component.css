@@ -51,3 +51,14 @@
 .contact-btn {
     cursor: pointer;
 }
+.footer-icon img {
+    height: 40%;
+    color: white;
+}
+.footer-icon img:hover {
+    margin-top: -3px;
+    height: 65%;
+}
+.mobile-footer {
+    
+}
