@@ -1,57 +1,26 @@
-import { Component } from '@angular/core';
-import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
-import * as nodemailer from 'nodemailer';
-declare const sendEmail: any;
+import { Component, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Amilbangsa';
-  closeResult = '';
+  title = 'website_amil';
 
-  sendMail() {
-    sendEmail();
-  }
+  @ViewChild('readMore') readMore!: ElementRef;
+  @ViewChild('dots') dots!: ElementRef;
+  @ViewChild('more') more!: ElementRef;
 
-  toKabs() {
-    alert('Matcho dancer kaw jo  . . .')
-  }
-  // onSubmit(contactForm: NgForm) {
-  //   if (contactForm.valid) {
-  //     const email = contactForm.value;
-  //     const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
-  //     this.http.post('https://formspree.io/asdlf7asdf',
-  //       { name: email.name, replyto: email.email, message: email.messages },
-  //       { 'headers': headers }).subscribe(
-  //         response => {
-  //           console.log(response);
-  //         }
-  //       );
-  //   }
-  //}
-
-  constructor(private modalService: NgbModal) {
-  }
-
-  open(content: any) {
-    this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title'}).result.then((result) => {
-      this.closeResult = `Closed with: ${result}`;
-    }, (reason) => {
-      this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
-    });
-  }
-
-  private getDismissReason(reason: any): string {
-    if (reason === ModalDismissReasons.ESC) {
-      return 'by pressing ESC';
-    } else if (reason === ModalDismissReasons.BACKDROP_CLICK) {
-      return 'by clicking on a backdrop';
+  readMoreFun() {
+    if (this.dots.nativeElement.style.display === "none") {
+      this.dots.nativeElement.style.display = "inline";
+      this.readMore.nativeElement.innerHTML = "Read more";
+      this.more.nativeElement.style.display = "none";
     } else {
-      return `with: ${reason}`;
+      this.dots.nativeElement.style.display = "none";
+      this.readMore.nativeElement.innerHTML = "Read less";
+      this.more.nativeElement.style.display = "inline";
     }
   }
-  
 }
