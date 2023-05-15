@@ -4,33 +4,15 @@
 }
 
 .content {
-    margin: 4%;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 3%;
     height: 80vh;
     border-radius: 20px;
 }
 
-.navbar-customize {
-    width: 100vw;
-    height: fit-content;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .remove-bg {
     background: none !important;
-    width: 80vw !important;
-}
-
-li {
-    margin-right: 20%;
-}
-
-a {
-    // font-size: ;
-    &:active {
-        color: white;
-    }
 }
 
 @import url('https://fonts.googleapis.com/css?family=Exo+2');
@@ -172,6 +154,60 @@ img {
     z-index: 1;
 }
 
-nav {
-    margin: 1%;
+.nav {
+  height: 5vh;
+  margin-top: 1.7%;
+}
+
+.nav-placer {
+  height: 6vh;
+  margin-right: 4vw;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  margin: 1%;
+}
+
+a {
+  color: #0d0722;
+  text-align: center;
+  text-decoration: none;
+}
+
+.logo {
+  background-color: red;
+}
+
+width-50 {
+  width: 50vw !important;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+li a {
+  display: block;
+  padding: 8px;
+}
+
+.nav-button-placer {
+  width: 100%;
 }
