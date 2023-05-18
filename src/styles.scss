@@ -5,5 +5,15 @@ body {
     height: 100vh;
     width: 100vw;
     overflow: hidden; 
-    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    background: rgb(5,3,36);
+    background: linear-gradient(73deg, rgba(5,3,36,1) 0%, rgba(0,30,36,1) 100%);
 }
+
+.glass {
+    // background: rgba( 255, 255, 255, 0.25 );
+    // box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    // backdrop-filter: blur( 4px );
+    // -webkit-backdrop-filter: blur( 4px );
+    // border-radius: 10px;
+    // border: 1px solid rgba( 255, 255, 255, 0.18 );
+  }
