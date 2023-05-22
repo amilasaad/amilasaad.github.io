@@ -1,5 +1,5 @@
 <div class="container-customize">
-    <img src="../../assets/images/about-bg.jpg">
+    <!-- <img src="../../assets/images/about-bg.jpg"> -->
     <div class="row nav">
         <div class="col width-50">
             <!-- <div class="logo"><i class="bi bi-person-circle"></i></div> -->
@@ -17,7 +17,26 @@
     </div>
 </div>
 <div class="row content">
-    <div class="col intro-content">
-        <div class="inner-content"></div>
+    <div class="inner-content">
+        <div *ngFor="let d of data" class="row content-data d-flex justify-content-end">
+            <div class="row" *ngIf="d.headerPlace == 'left'">
+                <div class="col">
+                    <h4>{{ d.header1 }}</h4>
+                    <h2>{{ d.header2 }}</h2>
+                </div>
+                <div class="col n-line  width-50">
+                    <p>{{ d.message }}</p>
+                </div>
+            </div>
+            <div class="row" *ngIf="d.headerPlace == 'right'">
+                <div class="col d-flex justify-content-start">
+                    <p>{{ d.message }}</p>
+                </div>
+                <div class="col width-50">
+                    <h4>{{ d.header1 }}</h4>
+                    <h2>{{ d.header2 }}</h2>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
