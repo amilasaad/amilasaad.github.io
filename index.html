@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AML | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("AC_2iFnAVnmfCWqxy");
+        })();
+    </script>
+</head>
+
+<body>
+    <div class="mesh-bg"></div>
+    <div id="experience-modal" class="modal">
+        <div class="modal-content glass">
+            <span class="close-modal">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+    <main class="app-shell">
+        <aside class="glass-sidebar">
+            <div class="logo">AML</div>
+            <nav class="nav-icons">
+                <a href="#home" class="nav-item active">
+                    <svg class="nav-svg" viewBox="0 0 24 24">
+                        <path d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" />
+                    </svg>
+                </a>
+                <a href="#skills" class="nav-item">
+                    <svg class="nav-svg" viewBox="0 0 24 24">
+                        <path
+                            d="M11,2C8.3,2,6,4.1,5.2,6.7C3.4,7.4,2,9.1,2,11.2c0,2.1,1.4,3.8,3.2,4.5C6,18.3,8.3,20.4,11,20.4V11.2V2z" />
+                        <circle cx="17.5" cy="5.5" r="2.5" />
+                        <path d="M12.5,6.5l3,0.5" />
+                        <circle cx="20.5" cy="12" r="2.5" />
+                        <path d="M12.5,12h5.5" />
+                        <circle cx="17.5" cy="18.5" r="2.5" />
+                        <path d="M12.5,17.5l3-0.5" />
+                    </svg>
+                </a>
+                <a href="#work" class="nav-item">
+                    <svg class="nav-svg" viewBox="0 0 24 24">
+                        <path
+                            d="M10,2H14A2,2 0 0,1 16,4V6H20A2,2 0 0,1 22,8V19A2,2 0 0,1 20,21H4C2.89,21 2,20.1 2,19V8C2,6.89 2.89,6 4,6H8V4C8,2.89 8.89,2 10,2M14,6V4H10V6H14Z" />
+                    </svg>
+                </a>
+                <a href="#contact" class="nav-item">
+                    <svg class="nav-svg" viewBox="0 0 24 24">
+                        <path
+                            d="M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4M20,8L12,13L4,8V6L12,11L20,6V8Z" />
+                    </svg>
+                </a>
+            </nav>
+            <div class="sidebar-utils">
+                <button id="theme-toggle" class="util-btn">
+                    <svg class="util-svg" viewBox="0 0 24 24">
+                        <path
+                            d="M12,18C11.11,18 10.26,17.8 9.5,17.45C11.56,16.5 13,14.42 13,12C13,9.58 11.56,7.5 9.5,6.55C10.26,6.2 11.11,6 12,6A6,6 0 0,1 18,12A6,6 0 0,1 12,18M20,8.69V4H15.31L12,0.69L8.69,4H4V8.69L0.69,12L4,15.31V20H8.69L12,23.31L15.31,20H20V15.31L23.31,12L20,8.69Z" />
+                    </svg>
+                </button>
+                <button id="music-toggle" class="util-btn">
+                    <svg id="music-icon" class="util-svg" viewBox="0 0 24 24">
+                        <path
+                            d="M12,3V13.55C11.41,13.21 10.73,13 10,13C7.79,13 6,14.79 6,17C6,19.21 7.79,21 10,21C12.21,21 14,19.21 14,17V7H18V3H12Z" />
+                    </svg>
+                </button>
+                <audio id="bg-music" loop preload="auto">
+                    <source src="https://www.bensound.com/bensound-music/bensound-slowmotion.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </aside>
+        <div class="main-view">
+            <nav class="floating-header">
+                <div class="header-logo">DOUBLE AWARD WINNER</div>
+                <div class="header-links">
+                    <a href="#work">Experience</a>
+                    <a href="#skills">Skills</a>
+                    <a href="https://drive.google.com/file/d/1vlvMF48WPd9LwocyosO2mGO945rIEPDD/view?usp=share_link"
+                        target="_blank" class="header-btn">View Resume</a>
+                </div>
+            </nav>
+            <header class="hero" id="home">
+                <div class="hero-image-container">
+                    <div class="neon-ring"></div>
+                    <div class="hero-image">
+                        <img src="./image/amil.jpg" alt="Amil Asaad Portrait">
+                    </div>
+                </div>
+                <div class="hero-content">
+                    <span class="badge">LET'S TALK!</span>
+                    <h1>AMIL <span class="highlight">ASAAD</span></h1>
+                    <p>Certified MuleSoft Developer & Full-Stack Engineer specializing in high-performance middleware
+                        and AI-integrated web applications.</p>
+                    <div class="social-bar">
+                        <a target="_blank" href="https://www.facebook.com/hiro.makonotchi/" class="social-icon"><svg
+                                class="nav-svg" viewBox="0 0 24 24" fill="#94a3b8">
+                                <path
+                                    d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96C18.34 21.21 22 17.06 22 12.06C22 6.53 17.5 2.04 12 2.04Z" />
+                            </svg></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/amilbangsaasaad8866/"
+                            class="social-icon"><svg class="nav-svg" viewBox="0 0 24 24" fill="#94a3b8">
+                                <path
+                                    d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
+                            </svg></a>
+                        <a target="_blank" href="https://github.com/amilasaad" class="social-icon"><svg class="nav-svg"
+                                viewBox="0 0 24 24" fill="#94a3b8">
+                                <path
+                                    d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z" />
+                            </svg></a>
+                        <a target="_blank" href="mailto:amilasaad@gmail.com" class="social-icon"><svg class="nav-svg"
+                                viewBox="0 0 24 24" fill="#94a3b8">
+                                <path
+                                    d="M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4M20,8L12,13L4,8V6L12,11L20,6V8Z" />
+                            </svg></a>
+                    </div>
+                </div>
+            </header>
+            <section id="skills" class="section">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-tag filled blue" style="--fill: 85%;">MuleSoft (Mule 4)</div>
+                    <div class="skill-tag filled purple" style="--fill: 80%;">Java / Spring Boot</div>
+                    <div class="skill-tag filled pink" style="--fill: 75%;">Angular</div>
+                    <div class="skill-tag filled cyan" style="--fill: 70%;">Kafka & Redis</div>
+                    <div class="skill-tag filled blue" style="--fill: 65%;">MySQL / PostgreSQL</div>
+                    <div class="skill-tag filled purple" style="--fill: 60%;">NGINX / Reverse Proxy</div>
+                    <div class="skill-tag filled pink" style="--fill: 80%;">AI Model Integration</div>
+                    <div class="skill-tag filled cyan" style="--fill: 90%;">HTML / CSS / JS</div>
+                </div>
+            </section>
+            <section id="work" class="section">
+                <h2 class="section-title">Experience</h2>
+                <div class="horizontal-scroll-container">
+                    <div class="carousel-3d-container">
+                        <div class="carousel-3d" id="carousel">
+                            <article class="project-card clickable" data-exp="ascendion" style="--i:1;">
+                                <div class="project-preview"><img src="image/ascendion-work.jpg" alt="Ascendion"></div>
+                                <h3>Ascendion</h3>
+                                <p>MuleSoft, Java, NGINX, PostgreSQL, Kafka, JMS, Redis</p>
+                                <span class="highlight">read more</span>
+                            </article>
+                            <article class="project-card clickable" data-exp="freelance" style="--i:2;">
+                                <div class="project-preview"><img src="image/freelance-olfu.jpg" alt="OLFU"></div>
+                                <h3>OLFU</h3>
+                                <p>Angular, Java, Spring Boot, AI Facial Recognition, MySQL, NGINX</p>
+                                <span class="highlight">read more</span>
+                            </article>
+                            <article class="project-card clickable" data-exp="xurpas" style="--i:3;">
+                                <div class="project-preview"><img src="image/xurpas-work.jpg" alt="Xurpas"></div>
+                                <h3>Xurpas Inc.</h3>
+                                <p>Java, Spring Boot, MySQL, Angular, TypeScript</p>
+                                <span class="highlight">read more</span>
+                            </article>
+                            <article class="project-card clickable" data-exp="iict" style="--i:4;">
+                                <div class="project-preview"><img src="image/iict-dev-exp.png" alt="IICT"></div>
+                                <h3>IICT Dept</h3>
+                                <p>Java, Swing, MySQL</p>
+                                <span class="highlight">read more</span>
+                            </article>
+                            <article class="project-card clickable" data-exp="tourism" style="--i:5;">
+                                <div class="project-preview"><img src="image/freelance-scholar-info-app.jpg"
+                                        alt="Tourism"></div>
+                                <h3>Scholar App</h3>
+                                <p>Java, Swing, MySQL</p>
+                                <span class="highlight">read more</span>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contact" class="section">
+                <div class="contact-glass-container">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-row">
+                            <div class="input-group">
+                                <label>Name</label>
+                                <input type="text" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="input-group">
+                                <label>Email</label>
+                                <input type="email" name="email" placeholder="your@email.com" required>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label>Message</label>
+                            <textarea name="message" rows="4" placeholder="How can I help with your next project?"
+                                required></textarea>
+                        </div>
+
+                        <input type="hidden" name="title" value="New Contact Message from Amil Website">
+                        <input type="hidden" name="time" id="current-time">
+                        <button type="submit" id="submit-btn" class="submit-action">Send Message</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
