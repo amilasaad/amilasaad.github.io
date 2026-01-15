@@ -138,7 +138,6 @@ function update() {
         const angle = (index + 1) * 72 + currentRotation;
         const normalizedAngle = ((angle % 360) + 360) % 360;
         
-        // Items between 90 and 270 degrees are "in the back"
         if (normalizedAngle > 90 && normalizedAngle < 270) {
             card.style.filter = "blur(4px) brightness(0.5)";
             card.style.opacity = "0.7";
@@ -188,7 +187,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
             btn.innerText = 'Message Sent!';
             btn.style.background = '#22c55e';
             alert('Thank you! Your message has been sent successfully.');
-            this.reset(); // Clear the form
+            this.reset();
             
             setTimeout(() => {
                 btn.innerText = 'Send Message';
@@ -201,3 +200,104 @@ document.getElementById('contact-form').addEventListener('submit', function(even
             alert('Failed to send: ' + JSON.stringify(err));
         });
 });
+
+const observerOptions = {
+    threshold: 0.2
+};
+
+const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+        }
+    });
+}, observerOptions);
+
+const thesisCard = document.querySelector('.reveal-up');
+if (thesisCard) {
+    revealObserver.observe(thesisCard);
+}
+
+document.querySelector('a[href="#thesis"]')?.addEventListener('click', (e) => {
+    navItems.forEach(i => i.classList.remove('active'));
+});
+
+let activeIndex = 0;
+const cards = document.querySelectorAll('.thesis-card');
+const dots = document.querySelectorAll('.dot');
+
+function updateSlider() {
+    cards.forEach((card, index) => {
+        const offset = index - activeIndex;
+        card.style.setProperty('--offset', offset);
+        card.style.setProperty('--abs-offset', Math.abs(offset));
+        
+        if (offset === 0) {
+            card.classList.add('active');
+        } else {
+            card.classList.remove('active');
+        }
+    });
+
+    dots.forEach((dot, index) => {
+        dot.classList.toggle('active', index === activeIndex);
+    });
+}
+
+cards.forEach((card, index) => {
+    card.addEventListener('click', () => {
+        activeIndex = index;
+        updateSlider();
+    });
+});
+
+function jumpToCard(index) {
+    activeIndex = index;
+    updateSlider();
+}
+
+updateSlider();
+
+let sliderActiveIndex = 0;
+const sliderCards = document.querySelectorAll('.thesis-card');
+const sliderDots = document.querySelectorAll('.dot');
+let autoPlayInterval;
+
+function updateSliderState() {
+    sliderCards.forEach((card, index) => {
+        const offset = index - sliderActiveIndex;
+        card.style.setProperty('--offset', offset);
+        card.style.setProperty('--abs-offset', Math.abs(offset));
+        
+        card.classList.toggle('active', offset === 0);
+    });
+
+    sliderDots.forEach((dot, index) => {
+        dot.classList.toggle('active', index === sliderActiveIndex);
+    });
+}
+
+function startAutoPlay() {
+    clearInterval(autoPlayInterval);
+    autoPlayInterval = setInterval(() => {
+        sliderActiveIndex = (sliderActiveIndex + 1) % sliderCards.length;
+        updateSliderState();
+    }, 3000);
+}
+
+sliderCards.forEach((card, index) => {
+    card.addEventListener('click', () => {
+        sliderActiveIndex = index;
+        updateSliderState();
+        startAutoPlay(); 
+    });
+});
+
+window.jumpToCard = function(index) {
+    sliderActiveIndex = index;
+    updateSliderState();
+    startAutoPlay();
+}
+
+updateSliderState();
+startAutoPlay();
