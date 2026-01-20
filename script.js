@@ -99,6 +99,50 @@ themeBtn.addEventListener('click', () => {
     document.body.classList.toggle('light-mode');
 });
 
+const aboutDots = document.querySelectorAll('.about-dot');
+const aboutSlides = document.querySelectorAll('.about-slide');
+let currentAboutSlide = 0;
+let aboutSlideInterval;
+
+function showAboutSlide(n) {
+    if (n >= aboutSlides.length) currentAboutSlide = 0;
+    if (n < 0) currentAboutSlide = aboutSlides.length - 1;
+    
+    aboutSlides.forEach(slide => slide.style.display = 'none');
+    aboutDots.forEach(dot => dot.classList.remove('active'));
+    
+    if (aboutSlides[currentAboutSlide]) {
+        aboutSlides[currentAboutSlide].style.display = 'block';
+        aboutSlides[currentAboutSlide].style.animation = 'slideInImage 0.5s ease-out';
+    }
+    if (aboutDots[currentAboutSlide]) {
+        aboutDots[currentAboutSlide].classList.add('active');
+    }
+}
+
+function nextAboutSlide() {
+    currentAboutSlide++;
+    showAboutSlide(currentAboutSlide);
+}
+
+function startAboutSlideshow() {
+    showAboutSlide(currentAboutSlide);
+    aboutSlideInterval = setInterval(nextAboutSlide, 5000);
+}
+
+aboutDots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+        clearInterval(aboutSlideInterval);
+        currentAboutSlide = index;
+        showAboutSlide(currentAboutSlide);
+        startAboutSlideshow();
+    });
+});
+
+if (aboutSlides.length > 0) {
+    startAboutSlideshow();
+}
+
 musicBtn.addEventListener('click', () => {
     if (music.paused) {
         music.play().then(() => {
