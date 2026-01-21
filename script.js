@@ -54,18 +54,20 @@ const experiences = {
         ]
     },
     iict: {
-        title: "Lead System Developer",
-        company: "IICT Department",
+        title: "Sole Software Developer",
+        company: "School Department",
         period: "May 2017 - August 2019",
         awards: [],
         details: [
-            "Developed a voting system application using Java Swing for an interactive interface.",
-            "Utilized Java programming to ensure system efficiency and reliability.",
-            "Incorporated MySQL as the backend to securely store and manage voting data."
+            "Solely assigned to design and develop a voting system application for the department.",
+            "Built a Java-based desktop application using Swing/AWT with an interactive GUI.",
+            "Implemented all core functionalities including vote casting, validation, and result tallying.",
+            "Integrated MySQL as the backend database to securely store and manage voting data.",
+            "Deployed and supported the system for two official departmental voting events."
         ]
     },
     tourism: {
-        title: "Lead System Developer",
+        title: "Lead Software Developer",
         company: "Office of Tourism",
         period: "March 2018 - April 2018",
         awards: [],
